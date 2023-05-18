@@ -1,0 +1,43 @@
+.web-series-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: beige;
+    border-bottom-style:groove;
+  }
+  
+  .web-series {
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .series-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  .series-image:hover {
+    transform: scale(1.15);
+  }
+  
+  .series-details {
+    padding: 10px;
+  }
+  
+  .series-name {
+    margin: 5px 0;
+    color: red;
+  }
+  
+  .series-description {
+    font-style: italic;
+  }
+  
+  .episode-count, .director-name {
+    margin: 5px 0;
+    font-weight: bold;
+  }
+
+  
