@@ -1,0 +1,14 @@
+Implement Book class having instance variables to hold book id, book name, book author, book price.
+Class must have paramaterized constructor and a method which returns all book details (return all variables values using  ${})
+All instance variables must be private. and Provide public get set properties in class to access instance variables outside.
+
+Create 5 Book objects and store in one book array
+
+Implement following using forEach, find, filter, map, reduce
+1. Iterate Book array using forEach
+2. Find all books having price less than 500
+3. Find first book having price greater than 600
+4. Find all Java related books
+5. Make sum of all Book Prices
+6. Store Book Author of every book in seperate array
+7. Display Books having Author name starting with M/m
