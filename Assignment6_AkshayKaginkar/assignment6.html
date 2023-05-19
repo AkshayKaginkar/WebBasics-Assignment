@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Show</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+  
+</head>
+<body backgroun>
+    <div class="slideshow">
+        <img src="images/1.jpg" alt="Image 1">
+        <img src="images/2.jpg" alt="Image 2">
+        <img src="images/3.jpg" alt="Image 3">
+        <img src="images/4.jpg" alt="Image 4">
+        <img src="images/5.jpg" alt="Image 5">
+        <img src="images/6.jpg" alt="Image 6">
+        <img src="images/7.jpg" alt="Image 7">
+        <img src="images/8.jpg" alt="Image 8">
+        <img src="images/9.jpg" alt="Image 9">
+        <img src="images/10.jpg" alt="Image 10">
+      </div>
+
+      <script>
+
+$(document).ready(function() {
+  var images = $('.slideshow img');
+  var currentIndex = 0;
+  var interval;
+
+  // Function to fade in the next image
+  function showNextImage() {
+    var nextIndex = (currentIndex + 1) % images.length;
+    images.eq(currentIndex).fadeOut(1000);
+    images.eq(nextIndex).fadeIn(2000);
+    currentIndex = nextIndex;
+  }
+
+  // Start the slideshow
+  function startSlideshow() {
+    interval = setInterval(showNextImage, 3000);
+  }
+
+ 
+
+  // Initial setup
+  images.eq(currentIndex).fadeIn(1000);
+  startSlideshow();
+  
+  
+});
+
+
+</script>
+      
+      
+</body>
+</html>

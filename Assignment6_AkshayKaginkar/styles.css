@@ -1,0 +1,30 @@
+.slideshow {
+    position: relative;
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slideshow img {
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 450px;
+    height: 300px;
+    display: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("images/wallpaper.jpg");
+    background-color: black;
+}
+  
+
+  
+  
+  
